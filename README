@@ -1,0 +1,5 @@
+This is a modified version of the 'genfkey' tool:
+  - for each foreign key declaration, the program checks that there is at least one associated index,
+  - triggers are not generated, instead queries are generated to check that there is no dangling FKs.
+See http://www.mail-archive.com/sqlite-users@sqlite.org/msg37771.html
+And http://www.mail-archive.com/sqlite-users@sqlite.org/msg37866.html
