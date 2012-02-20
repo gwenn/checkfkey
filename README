@@ -9,3 +9,7 @@ And http://www.mail-archive.com/sqlite-users@sqlite.org/msg37866.html
 USAGE
 
 $ checkfkey ./test.db | sqlite3 ./test.db
+
+BUILD
+
+$ gcc -fPIC -O2 -Wall -o checkfkey checkfkey.c `pkg-config --libs sqlite3`
